@@ -1,118 +1,131 @@
 * {
-    box-sizing: border-box;
-    list-style: none;
-   }
-   header{
-    color: black;
-     border-bottom: 1px white solid;
-     width: 100%;
-     background-color: rgb(126, 126, 126);
-     text-align: center;
-   } 
-   body {
-    color: black;
-     font-family: 'Cutive Mono', monospace;
-     font-size: 20px;
-     background-color: rgb(126, 126, 126);
-    
-   }
- 
-   .bio {
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: column; 
-    flex: 1;    
-   }
-  
-   footer{
-     list-style: none;
-     color: black;
-     padding: 50px;
-     width: 100%;
-     text-align: center;
-     font-size: 14px;
-     background-color: rgba(90, 88, 88, 0.973);
-    
-   }
-   ul{
-     align-self: center;
-     line-height: 18px;
-   }
-   h2{
-     font-size: 20px;
-     text-decoration: underline;
-     text-align: center;
-     }
-     h4{
-       text-decoration: underline;
-     }
- h3{
-   font-size: 20px;
+  box-sizing: border-box;
+  list-style: none;
  }
- p {
-   line-height: 24px;
-   font-size: 16px;
- }
- img{
-     width: 65%;
-     height: 60%;
- }
- a{
-   font-size: 14px;
-   color: black;
- }
- a:hover{
-   color: rgb(57, 194, 57);
- }
- .headline{
-   line-height: 32px;
+ header{
+   color: white;
+   border-bottom: 1px white solid;
+   width: 100%;
+   background-color: rgb(126, 126, 126);
    text-align: center;
-   margin: auto;
-   flex: 1 1 0;
-   justify-content: center;
-   width: 100%;
-   padding: 15px;
-   display: flex;
-   background-color: rgba(82, 78, 78, 0.973);
+ } 
+ body {
+  
+  color: white;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 20px;
+  background-color: rgb(126, 126, 126);
+  
  }
- 
- .about{
-background-color: rgba(180, 170, 170, 0.973);
-   width: 100%;
-   justify-content: center;
-   }
- .projects{
-    background-color: rgba(228, 222, 222, 0.973);
-   width: 100%;
+ .bio {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column; 
+  flex: 1;    
  }
 
- @media only screen and (min-width: 768px){
-    .bio{
-     display: flex;
-     justify-content: space-around;
-     width: 100%;   
-     flex: 1;    
-    }
+ footer{
+   list-style: none;
+   width: 100%;
+   font-size: 18px;  
  }
- @media only screen and (min-width: 1024px){
-    .bio{
-        display:inline-flex;
-        justify-content:center;
-        align-items:center;
-        flex: 1;
-        flex-direction: row;
-      }
-    .about{
-      width: 50%;
-    align-self: stretch;
-    height: auto;
-     
+ .info{
+   text-align: center;
+ }
+ ul{
+   line-height: 24px;
+ }
+ li{
+   padding-bottom: 10px;
+ }
+ h2{
+   text-align: center;
+   font-size: 20px;
+   text-decoration: underline;
+   }
+   h4{
+     text-align: left;
+     text-decoration: underline;
+   }
+   .dropdown:hover{
+    color:rgb(57, 194, 57);
+    cursor: pointer;
+   }
+h3{
+ font-size: 20px;
+}
+p {
+ line-height: 24px;
+ font-size: 16px;
+}
+img{
+  display: block;
+   width: 65%;
+   height: 60%;
+   margin-top:20px;
+}
+a{
+  cursor: pointer;
+  color: white;
+ font-size: 18px; 
+}
+a:hover{
+ color: rgb(57, 194, 57);
+}
+.headline{
+ line-height: 32px;
+ text-align: center;
+ margin: auto;
+ flex: 1 1 0;
+ justify-content: center;
+ width: 100%;
+ padding: 15px;
+ display: flex;
+}
+#golf-quiz{
+  display: none;
+}
+.about{
+ width: 100%;
+ justify-content: center;
+ }
+.projects{
+ width: 100%;
+ list-style: disc;
+}
+
+@media only screen and (min-width: 768px){
+  .bio{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;   
+   flex: 1;    
+  }
+}
+@media only screen and (min-width: 1024px){
+  .bio{
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      flex: 1;
+      flex-direction: row;
     }
-    .projects{
-    align-self: stretch;
-    height: auto;
+  .about{
+    padding: 20px;
     width: 50%;
-     
-    }
+  align-self: stretch;
+  height: auto;
+  border-right: white .25px solid; 
+ 
+  }
+  .projects{
+  
+    padding: 20px;
+  align-self: stretch;
+  height: auto;
+  width: 50%;
+  border-left: white .25px solid;
+ 
+  }
 }
