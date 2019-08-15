@@ -24,20 +24,32 @@
   flex-direction: column; 
   flex: 1;    
  }
-
  footer{
+ align-content: center;
    list-style: none;
    width: 100%;
-   font-size: 18px;  
- }
- .info{
-   text-align: center;
+   font-size: 18px;
+   padding: 10px;  
  }
  ul{
+   padding: 0;
    line-height: 24px;
+
  }
  li{
    padding-bottom: 10px;
+ }
+ .logo{
+   padding-top: 10px; 
+   padding-right: 10px;
+   align-content: center;
+   width: 80px;
+   height: 35px;
+   flex: 0 1 auto;
+ }
+ .info{
+   text-align: center;
+   margin: 0;
  }
  h2{
    text-align: center;
@@ -59,11 +71,11 @@ p {
  line-height: 24px;
  font-size: 16px;
 }
-img{
+.screenshot{
   display: block;
    width: 65%;
    height: 60%;
-   margin-top:20px;
+   margin-top: 20px;
 }
 a{
   cursor: pointer;
@@ -102,6 +114,7 @@ a:hover{
    width: 100%;   
    flex: 1;    
   }
+
 }
 @media only screen and (min-width: 1024px){
   .bio{
@@ -120,7 +133,6 @@ a:hover{
  
   }
   .projects{
-  
     padding: 20px;
   align-self: stretch;
   height: auto;
@@ -128,4 +140,5 @@ a:hover{
   border-left: white .25px solid;
  
   }
+
 }
