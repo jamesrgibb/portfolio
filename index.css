@@ -31,6 +31,13 @@
    font-size: 18px;
    padding: 10px;  
  }
+ .headshot{
+   align-items: center;
+   text-align: center;
+   width: 114px;
+   height: 114px;
+   flex: 0 1 auto;
+ }
  ul{
    padding: 0;
    line-height: 24px;
@@ -44,7 +51,7 @@
    padding-right: 10px;
    align-content: center;
    width: 80px;
-   height: 35px;
+   height: 30px;
    flex: 0 1 auto;
  }
  .info{
